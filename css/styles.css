@@ -49,3 +49,12 @@ body {
     clear: both;
     height: 0;
 }
+
+.site-header {
+    background: #0B1220;
+    border-bottom: 1px solid #1C2A3E;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+}
