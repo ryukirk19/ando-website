@@ -1,8 +1,9 @@
-* {
+.po {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 html {
     scroll-behavior: smooth;
@@ -15,6 +16,8 @@ body {
     color: #52627A;
     background-color: #F4F8FC;
 }
+
+/*============= Topbar*/
 
 .topbar {
     background-color: #07101C;
@@ -57,4 +60,41 @@ body {
     top: 0;
     z-index: 100;
 
+}
+
+.logo {
+    float: left;
+    padding: 16px 0;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #FFFFFF;
+}
+
+.logo:hover {
+    text-decoration: none;
+}
+
+.main-nav {
+    float: right;
+    font-size: 13.5px;
+    font-weight: 500;
+}
+
+.main-nav a {
+    display: inline-block;
+    padding: 23px 11px 19px;
+    color: #C3D0E0;
+    border-bottom: 3px solid transparent;
+}
+
+.main-nav a:hover {
+    color: #22D3EE;
+    border-bottom-color: #22D3EE;
+    text-decoration: none;
+}
+
+.main-nav a.active {
+    color: #22D3EE;
+    border-bottom-color: #22D3EE;
 }
