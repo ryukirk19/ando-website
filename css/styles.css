@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Times New Roman", Times, Georgia, serif;
+    font-size: 17px;
+    line-height: 1.65;
+    color: #52627A;
+    background-color: #F4F8FC;
+}
+
+.topbar {
+    background-color: #07101C;
+    color: #93A7BE;
+    font-size: 13px;
+    padding: 8px 0;
+    border-bottom: 1px solid #142033;
+}
+
+.topbar .left {
+    float: left;
+}
+
+.topbar .right {
+    float: right;
+}
+
+.topbar strong {
+    color: #22D3EE;
+    font-weight: 600;
+}
+
+.container {
+    width: 92%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+}
