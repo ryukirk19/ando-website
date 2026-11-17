@@ -30,7 +30,16 @@ a {
 }
 
 img {
+    display: block;
     max-width: 100%;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul, ol {
+    list-style-position: inside;
 }
 
 
@@ -70,50 +79,13 @@ img {
     height: 0;
 }
 
+/*=========== Header*/
 .site-header {
-    background: #0B1220;
+    background-color: #0B1220;
     border-bottom: 1px solid #1C2A3E;
     position: sticky;
     top: 0;
     z-index: 100;
-
-}
-
-.logo {
-    float: left;
-    padding: 16px 0;
-    font-size: 24px;
-    font-weight: 700;
-    letter-spacing: -0.5px;
-    color: #ffffff;
-}
-
-.logo:hover {
-    text-decoration: none;
-}
-
-.main-nav {
-    float: right;
-    font-size: 13.5px;
-    font-weight: 500;
-}
-
-.main-nav a {
-    display: inline-block;
-    padding: 23px 11px 19px;
-    color: #C3D0E0;
-    border-bottom: 3px solid transparent;
-}
-
-.main-nav a:hover {
-    color: #22D3EE;
-    border-bottom-color: #22D3EE;
-    text-decoration: none;
-}
-
-.main-nav a.active {
-    color: #22D3EE;
-    border-bottom-color: #22D3EE;
 }
 
 .logo {
@@ -145,7 +117,70 @@ img {
     letter-spacing: 1px;
 }
 
+.main-nav {
+    float: right;
+    font-size: 13.5px;
+    font-weight: 500;
+}
 
+.main-nav a {
+    display: inline-block;
+    padding: 23px 11px 19px;
+    color: #C3D0E0;
+    border-bottom: 3px solid transparent;
+}
+
+.main-nav a:hover {
+    color: #22D3EE;
+    border-bottom-color: #22D3EE;
+    text-decoration: none;
+}
+
+.main-nav a.active {
+    color: #22D3EE;
+    border-bottom-color: #22D3EE;
+}
+
+/*============= Buttons*/
+.btn {
+    display: inline-block;
+    padding: 13px 24px;
+    background-color: #22D3EE;
+    border: 1px solid #22D3EE;
+    border-radius: 10px;
+    color: #07131F;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: #67E8F9;
+    border-color: #67E8F9;
+    text-decoration: none;
+}
+
+.btn-ghost {
+    background-color: transparent;
+    border-color: #3E5A74;
+    color: #E4F7FC;
+}
+
+.btn-ghost:hover {
+    background-color: rgba(34, 211, 238, 0.12);
+    border-color: #22D3EE;
+    color: #FFFFFF;
+}
+
+.btn-small {
+    padding: 9px 16px;
+    font-size: 13px;
+    border-radius: 8px;
+}
+
+.btn-block {
+    display: block;
+    text-align: center;
+}
 /*============= Hero*/
 
 .hero {
@@ -188,41 +223,6 @@ img {
     font-size: 17px;
 }
 
-
-.btn {
-    display: inline-block;
-    padding: 12px 20px;
-    border: 1px solid #22D3EE;
-    background-color: #22D3EE;
-    color: #0B1220;
-    font-family: "Poppins", Arial, sans-serif;
-    font-size: 13px;
-    font-weight: 600;
-    text-align: center;
-}
-
-.btn:hover {
-    border-color: #FFFFFF;
-    background-color: #FFFFFF;
-    color: #0B1220;
-}
-
-.btn-ghost {
-    background-color: transparent;
-    color: #67E8F9;
-}
-
-.btn-ghost:hover {
-    background-color: #22D3EE;
-    border-color: #22D3EE;
-    color: #0B1220;
-}
-
-.hero-actions .btn {
-    margin-right: 8px;
-    margin-bottom: 8px;
-}
-
 .hero-visual {
     float: right;
     width: 40%;
@@ -249,152 +249,165 @@ img {
 /*========Stats */
 
 .stats {
-    padding: 22px 0;
     background-color: #FFFFFF;
-    border-bottom: 1px solid #E7EEF6;
-    text-align: center;
+    border-bottom: 1px solid #E1E9F2;
 }
 
 .stat {
-    float: left;
-    width: 25%;
+    display: inline-block;
+    width: 24.4%;
+    padding: 26px 0;
+    text-align: center;
+    vertical-align: top;
 }
 
 .stat strong {
     display: block;
     color: #0B1220;
-    font-family: "Poppins", Arial, sans-serif;
     font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 .stat span {
-    color: #52627A;
-    font-family: "Poppins", Arial, sans-serif;
-    font-size: 12px;
+    font-size: 13px;
+    color: #7A8AA0;
+    letter-spacing: 0.5px;
 }
 
 /* Sections */
 
 .section {
-    padding: 56px 0;
-}
-
-.section-tight {
-    padding: 36px 0;
+    padding: 72px 0;
 }
 
 .section-alt {
-    background-color: #F4F8FC;
+    background-color: #FFFFFF;
     border-top: 1px solid #E7EEF6;
     border-bottom: 1px solid #E7EEF6;
 }
 
 .section-head {
-    margin-bottom: 28px;
+    margin-bottom: 34px;
 }
 
 .kicker {
     display: block;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     color: #0E7490;
-    font-family: "Poppins", Arial, sans-serif;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 600;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 
 .section-head h2 {
-    margin: 0 0 8px;
     color: #0B1220;
-    font-size: 32px;
+    font-size: 34px;
     font-weight: 600;
     line-height: 1.2;
+    letter-spacing: -0.5px;
 }
 
 .section-head p {
-    max-width: 600px;
-    margin: 0;
-    color: #52627A;
+    max-width: 640px;
+    margin-top: 10px;
+    color: #5E6E84;
 }
 
-.head-link {
-    display: inline-block;
-    margin-top: 8px;
-    color: #0E7490;
+.section-head .head-link {
+    float: right;
+    margin-top: 14px;
     font-family: "Poppins", Arial, sans-serif;
     font-size: 13px;
     font-weight: 600;
 }
 
-.head-link:hover {
-    color: #0B1220;
-}
-
 /* Tier cards */
 
 .tier-grid {
+    font-size: 0;
     margin: 0 -1%;
 }
 
 .tier-card {
     display: inline-block;
-    width: 30.5%;
-    margin: 0 1% 18px;
-    padding: 20px;
+    width: 31.33%;
+    margin: 0 1% 22px;
+    padding: 26px 24px;
     border: 1px solid #DCE6F0;
+    border-radius: 16px;
     background-color: #FFFFFF;
     vertical-align: top;
+    font-size: 16px;
+    position: relative;
 }
 
-.tier-count {
-    float: right;
-    color: #8796AA;
+.tier-card:hover {
+    border-color: #22D3EE;
+    box-shadow: 0 14px 30px rgba(11, 18, 32, 0.08);
+}
+
+.tier-card .tier-count {
+    position: absolute;
+    top: 20px;
+    right: 22px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background-color: #EFFAFC;
+    color: #0E7490;
     font-family: "Poppins", Arial, sans-serif;
     font-size: 11px;
+    font-weight: 600;
 }
 
-.tier-dot {
+.tier-card .tier-dot {
     display: inline-block;
-    margin-bottom: 10px;
-    padding: 4px 8px;
+    width: 38px;
+    height: 38px;
+    margin-bottom: 16px;
+    border-radius: 50%;
     background-color: #0B1220;
     color: #22D3EE;
     font-family: "Poppins", Arial, sans-serif;
-    font-size: 11px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 38px;
+    text-align: center;
 }
 
 .tier-card h3 {
-    margin: 0 0 4px;
     color: #0B1220;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 600;
+    margin-bottom: 4px;
 }
 
-.tier-range {
-    display: block;
-    margin-bottom: 8px;
+.tier-card .tier-range {
     color: #0E7490;
-    font-family: "Poppins", Arial, sans-serif;
     font-size: 12px;
     font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 .tier-card p {
-    margin: 0 0 12px;
-    color: #52627A;
+    margin: 10px 0 14px;
     font-size: 15px;
+    color: #64748B;
 }
 
-.tier-link {
-    color: #0E7490;
+.tier-card .tier-link {
     font-family: "Poppins", Arial, sans-serif;
-    font-size: 12px;
+    font-size: 12.5px;
     font-weight: 600;
-}
-
-.tier-link:hover {
     color: #0B1220;
 }
+
+.tier-card .tier-link:hover {
+    color: #0E7490;
+}
+
+/*====== Phone Cards*/
 
 .card-grid {
     margin: 0 -1%;
