@@ -221,37 +221,6 @@ ul, ol {
     text-align: center;
 }
 
-.spec-pill {
-    position: absolute;
-    z-index: 3;
-    display: inline-block;
-    margin: 0 3px 8px;
-    padding: 8px 13px;
-    border: 1px solid #2B5A6B;
-    border-radius: 20px;
-    background-color: #0E1E31;
-    font-weight: 600;
-    color: #67E8F9;
-    font-size: 10px;
-    white-space: nowrap;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
-}
-
-.pill-1 {
-    top: 25%;
-    left: 52%;
-}
-
-.pill-2 {
-    top: 52%;
-    right: 6%;
-}
-
-.pill-3 {
-    bottom: 15%;
-    left: 52%;
-}
-
 .hero-visual img {
     display: block;
     width: 100%;
@@ -299,6 +268,7 @@ ul, ol {
 .tier-card {
     display: inline-block;
     width: 31.33%;
+    height: 300px;
     margin: 0 1% 22px;
     padding: 26px 24px;
     border: 1px solid #DCE6F0;
@@ -376,7 +346,7 @@ ul, ol {
 /* Sections */
 
 .section {
-    padding: 72px 0;
+    padding: 30px 0;
 }
 
 .section-alt {
@@ -521,6 +491,7 @@ ul, ol {
 .feature {
     display: inline-block;
     width: 32%;
+    height: 250px;
     margin-right: 1%;
     padding: 30px;
     border: 1px solid #DCE6F0;
@@ -564,7 +535,7 @@ ul, ol {
     padding: 30px;
     background-color: #0B1220;
     color: #C9D9E8;
-    border-radius: 10%;
+    border-radius: 16px;
 }
 
 .promo-copy {
@@ -682,4 +653,63 @@ ul, ol {
 
 .footer-bottom .right {
     float: right;
+}
+
+/* to make website responsive to all devices */
+@media (max-width: 800px) {
+    .topbar .left, .topbar .right, .logo, .main-nav,
+    .hero-copy, .hero-visual, .feature, .promo-copy, 
+    .promo-action, .footer-col, .footer-col.brand-col,
+    .footer-bottom .left, .footer-bottom .right {
+        float: none;
+        width: 100%;
+        text-align: left;
+    }
+
+    .topbar .right {
+        margin-top: 2px;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .main-nav {
+        text-align: center;
+    }
+
+    .main-nav a {
+        padding: 10px 6px;
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero-visual {
+        margin-top: 22px;
+        text-align: center;
+    }
+
+    .stat {
+        float: left;
+        width: 50%;
+        padding: 10px 0;
+    }
+
+    .tier-card,
+    .phone-card {
+        width: 100%;
+        margin: 0 0 16px;
+    }
+
+    .promo-action {
+        padding-top: 10px;
+        text-align: left;
+    }
+
+    .footer-bottom .right {
+        margin-top: 6px;
+    }
 }
