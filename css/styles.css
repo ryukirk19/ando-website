@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", "Segoe UI", Arial, sans-serif;
 }
 
 
@@ -17,10 +18,7 @@ body {
     background-color: #F4F8FC;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
     font-family: "Poppins", Arial, sans-serif;
 }
 
@@ -230,13 +228,35 @@ ul, ol {
 }
 
 .spec-pill {
+    position: absolute;
+    z-index: 3;
     display: inline-block;
     margin: 0 3px 8px;
-    padding: 5px 9px;
+    padding: 8px 13px;
     border: 1px solid #2B5A6B;
+    border-radius: 20px;
+    background-color: #0E1E31;
+    font-weight: 600;
     color: #67E8F9;
     font-family: "Poppins", Arial, sans-serif;
     font-size: 10px;
+    white-space: nowrap;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.pill-1 {
+    top: 25%;
+    left: 52%;
+}
+
+.pill-2 {
+    top: 52%;
+    right: 6%;
+}
+
+.pill-3 {
+    bottom: 15%;
+    left: 52%;
 }
 
 .hero-visual img {
@@ -244,6 +264,7 @@ ul, ol {
     width: 100%;
     margin-top: 8px;
     background-color: #FFFFFF;
+    border-radius: 5%
 }
 
 /*========Stats */
@@ -532,6 +553,7 @@ ul, ol {
     padding: 30px;
     background-color: #0B1220;
     color: #C9D9E8;
+    border-radius: 10%;
 }
 
 .promo-copy {
