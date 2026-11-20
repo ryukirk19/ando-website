@@ -874,7 +874,7 @@ ul, ol {
     }
 }
 
-/* Small Phones (480px and below) */
+/* Small Phones */
 @media (max-width: 480px) {
     .container {
         width: 94%;
