@@ -190,11 +190,15 @@ ul, ol {
 
 .eyebrow {
     display: inline-block;
-    margin-bottom: 12px;
-    padding: 5px 10px;
-    border: 1px solid #2B5A6B;
+    padding: 6px 12px;
+    border: 1px solid #234A5C;
+    border-radius: 20px;
+    background-color: rgba(34, 211, 238, 0.08);
     color: #67E8F9;
     font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .hero h1 {
@@ -655,61 +659,227 @@ ul, ol {
     float: right;
 }
 
-/* to make website responsive to all devices */
-@media (max-width: 800px) {
-    .topbar .left, .topbar .right, .logo, .main-nav,
-    .hero-copy, .hero-visual, .feature, .promo-copy, 
-    .promo-action, .footer-col, .footer-col.brand-col,
-    .footer-bottom .left, .footer-bottom .right {
+/* about us page-hero*/
+
+.page-hero {
+    padding: 58px 0 54px;
+    background-color: #0B1220;
+    color: #DCE8F4;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-hero::before {
+    content: "";
+    position: absolute;
+    top: -160px;
+    right: 5%;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+}
+
+.page-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.page-hero h1 {
+    margin: 12px 0 12px;
+    color: #FFFFFF;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -0.6px;
+}
+/* About media sec*/
+.about-media {
+    float: left;
+    width: 46%;
+}
+
+.about-media img {
+    width: 100%;
+    border-radius: 18px;
+    border: 1px solid #DCE6F0;
+}
+
+.about-copy {
+    float: right;
+    width: 50%;
+}
+
+.about-copy h2 {
+    color: #0B1220;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom: 14px;
+}
+
+.about-copy p {
+    margin-bottom: 12px;
+    color: #5E6E84;
+}
+
+.about-copy .btn {
+    margin-top: 10px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .main-nav a {
+        padding: 20px 8px;
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .tier-card, .phone-card {
+        width: 48%;
+        height: auto;
+    }
+
+    .feature {
+        width: 48%;
+        height: auto;
+        margin-right: 1%;
+        margin-bottom: 16px;
+    }
+
+    .promo-copy, .promo-action {
         float: none;
         width: 100%;
         text-align: left;
     }
 
+    .promo-action {
+        padding-top: 16px;
+    }
+
+    .footer-col, .footer-col.brand-col {
+        width: 48%;
+    }
+}
+
+/* Mobile and Small Tablets */
+@media (max-width: 768px) {
+    .topbar .left, .topbar .right,
+    .logo, .main-nav, .hero-copy,
+    .hero-visual, .feature,
+    .promo-copy, .promo-action,
+    .footer-col, .footer-col.brand-col,
+    .footer-bottom .left, .footer-bottom .right {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+        text-align: left;
+    }
+
+    .topbar {
+        font-size: 12px;
+    }
+
     .topbar .right {
-        margin-top: 2px;
+        margin-top: 4px;
     }
 
     .logo {
+        padding: 12px 0 6px;
         text-align: center;
     }
 
     .main-nav {
+        padding-bottom: 8px;
         text-align: center;
     }
 
     .main-nav a {
-        padding: 10px 6px;
-        font-size: 12px;
+        padding: 8px 7px;
+        font-size: 12.5px;
+    }
+
+    .hero {
+        padding: 36px 0 44px;
     }
 
     .hero h1 {
-        font-size: 34px;
+        font-size: 32px;
     }
 
     .hero-visual {
         margin-top: 22px;
-        text-align: center;
     }
 
     .stat {
         float: left;
         width: 50%;
-        padding: 10px 0;
+        padding: 14px 0;
     }
 
-    .tier-card,
-    .phone-card {
+    .section-head .head-link {
+        float: none;
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .section-head h2,.promo-copy h2, .page-hero h1 {
+        font-size: 28px;
+    }
+
+    .tier-card, .phone-card, .feature {
+        display: block;
         width: 100%;
+        height: auto;
         margin: 0 0 16px;
     }
 
-    .promo-action {
-        padding-top: 10px;
-        text-align: left;
+    .promo-banner {
+        padding: 20px;
+    }
+
+    .footer-col {
+        padding-right: 0;
+        margin-bottom: 18px;
     }
 
     .footer-bottom .right {
         margin-top: 6px;
+    }
+}
+
+/* Small Phones (480px and below) */
+@media (max-width: 480px) {
+    .container {
+        width: 94%;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .hero-actions .btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .stat strong {
+        font-size: 24px;
+    }
+
+    .phone-media {
+        height: 190px;
+    }
+
+    .phone-media img {
+        max-height: 155px;
+    }
+
+    .tier-card, .feature {
+        padding: 20px;
     }
 }
