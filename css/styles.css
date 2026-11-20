@@ -692,6 +692,7 @@ ul, ol {
     line-height: 1.15;
     letter-spacing: -0.6px;
 }
+
 /* About media sec*/
 .about-media {
     float: left;
@@ -745,7 +746,6 @@ ul, ol {
     .feature {
         width: 48%;
         height: auto;
-        margin-right: 1%;
         margin-bottom: 16px;
     }
 
@@ -768,10 +768,11 @@ ul, ol {
 @media (max-width: 768px) {
     .topbar .left, .topbar .right,
     .logo, .main-nav, .hero-copy,
-    .hero-visual, .feature,
-    .promo-copy, .promo-action,
-    .footer-col, .footer-col.brand-col,
-    .footer-bottom .left, .footer-bottom .right {
+    .hero-visual, .promo-copy,
+    .promo-action, .footer-col,
+    .footer-col.brand-col, .footer-bottom .left,
+    .footer-bottom .right, .about-media,
+    .about-copy {
         float: none;
         width: 100%;
         margin-right: 0;
@@ -787,6 +788,7 @@ ul, ol {
     }
 
     .logo {
+        display: block;
         padding: 12px 0 6px;
         text-align: center;
     }
@@ -805,8 +807,26 @@ ul, ol {
         padding: 36px 0 44px;
     }
 
+    .hero-copy {
+        text-align: center;
+    }
+
+    .eyebrow {
+        display: block;
+        width: fit-content;
+        margin: 0 auto 14px;
+        padding: 6px 14px;
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+
     .hero h1 {
         font-size: 32px;
+    }
+
+    .hero-copy p {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .hero-visual {
@@ -825,7 +845,7 @@ ul, ol {
         margin-top: 10px;
     }
 
-    .section-head h2,.promo-copy h2, .page-hero h1 {
+    .section-head h2, .promo-copy h2, .page-hero h1 {
         font-size: 28px;
     }
 
@@ -834,6 +854,10 @@ ul, ol {
         width: 100%;
         height: auto;
         margin: 0 0 16px;
+    }
+
+    .about-media {
+        margin-bottom: 18px;
     }
 
     .promo-banner {
